@@ -3,82 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tables in Tables</title>
+    <title>Document</title>
     <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
+        table,th,td{
             border: 1px solid black;
-            padding: 10px;
-            text-align: left;
         }
-        .black-background {
-            background-color: black;
-            color: white;
+
+        th,td{
+            padding: 10px;
         }
     </style>
 </head>
 <body>
-    <h1>Tables in Tables</h1>
     <table>
-        <tr>
-            <td>
-                <table>
-                    <tr>
-                        <th>Nested Table 1</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <ul>
-                                <li>List item 1</li>
-                                <li>List item 2</li>
-                                <li>List item 3</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-            <td>
-                <table>
-                    <tr>
-                        <th>Nested Table 2</th>
-                        <th>Column 1</th>
-                        <th>Column 2</th>
-                    </tr>
-					<tr>
-                       
-                        <td>abc</td>
-                        <td>def</td>
-                    </tr>
-                    <!-- Add rows as needed -->
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <table>
-                    <tr>
-                        <th>Nested Table 3</th>
-                    </tr>
-                    <tr>
-                        <td>Nested Table</td>
-                    </tr>
-                </table>
-            </td>
-            <td>
-                <table>
-                    <tr>
-                        <th>Nested Table 4</th>
-                    </tr>
-                    <tr>
-                        <td class="black-background">HTML</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
+        <tbody>
+            <tr>
+                <td>
+                    <table>
+                        <thead>
+                            <tr>
+                            <th colspan="2">Nested Table 2</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                            <td>Column 1</td>
+                            <td>Column 2</td>
+                           </tr>
+                           <tr>
+                            <td>abc</td>
+                            <td>def</td>
+                           </tr>
+                           
+                        </tbody>
+                    </table>
+                </td>
+
+
+                <td>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nested Table 1</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>List item</li>
+                                        <li>List item</li>
+                                        <li>List item</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">Nested Table 3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="">Nested Table</a></td>
+                                <td>Demo Continued</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+
+                <td>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nested Table 4</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>HTML</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
     </table>
 </body>
-</html>
 </html>
