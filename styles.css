@@ -1,2 +1,14 @@
 
 /* Your CSS Code here. */
+table,th, td {
+        border:1px solid black;
+        margin-top:10px;
+        margin-bottom:10px;
+        text-align: center;
+	      }
+      
+      }
+      .black-cell{
+        background-color: black;
+        color:white;
+      }
